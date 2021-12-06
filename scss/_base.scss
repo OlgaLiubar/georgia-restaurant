@@ -24,6 +24,14 @@ sans-serif;
     text-transform: uppercase;
 }
 
+@mixin centering($topValue) {
+    position: absolute;
+    top: $topValue;
+    left: 50%;
+    // сдвигает эл-т влево/вверх на 50% относительно собственных размеров эл-та
+    transform: translate(-50%, -50%);
+}
+
 * {
     margin: 0;
     padding: 0;

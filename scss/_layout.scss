@@ -6,12 +6,14 @@
     position: relative;
 
     .brand {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        // сдвигает эл-т влево/вверх на 50% относительно собственных размеров эл-та
-        transform: translate(-50%, -50%);
+        @include centering(15%);
         display: flex;
         align-items: center;
+    }
+
+    // прибавляет название класса к родительскому эл-ту
+    &-banner {
+        @include centering(50%);
+        text-align: center;
     }
 }
